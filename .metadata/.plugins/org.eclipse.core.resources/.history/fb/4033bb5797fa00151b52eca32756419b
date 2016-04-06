@@ -1,0 +1,14 @@
+package main;
+
+import java.awt.HeadlessException;
+import java.awt.Window;
+
+public class MyWindow extends Window{
+
+	MyWindow() throws HeadlessException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

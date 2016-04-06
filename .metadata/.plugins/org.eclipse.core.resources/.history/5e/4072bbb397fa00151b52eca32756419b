@@ -1,0 +1,15 @@
+package main;
+
+import java.awt.Frame;
+import java.awt.HeadlessException;
+import java.awt.Window;
+
+public class MyWindow extends Window{
+
+	public MyWindow(Frame arg0) {
+		super(arg0);
+		
+	}
+	
+	
+}

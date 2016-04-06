@@ -1,0 +1,10 @@
+
+public class Main {
+
+	public static void main(String[]args){
+		IPizza p1 = new Plain(new Pizza());
+		IPizza p2 = new Cheese(new Pizza());
+		IPizza p3 = new Crab(new Pizza());
+		IPizza p4 = new Crab(p2);
+	}
+}

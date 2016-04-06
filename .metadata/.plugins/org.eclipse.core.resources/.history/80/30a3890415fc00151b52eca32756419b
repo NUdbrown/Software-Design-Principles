@@ -1,0 +1,21 @@
+
+public class Cheese extends Toppings{
+
+	public Cheese(IPizza pizza) {
+		super(pizza);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return "Pizza " + super.getDescription();
+	}
+
+	@Override
+	public double cost() {
+		// TODO Auto-generated method stub
+		return super.cost() + 0.50;
+	}
+}
