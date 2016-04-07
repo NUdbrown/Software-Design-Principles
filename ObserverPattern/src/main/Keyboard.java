@@ -1,14 +1,11 @@
 package main;
 
-public class Keyboard implements Observer{
+public class Keyboard {
 
-	@Override
-	public void notify(Window window) {
-		
-	}
 	
-	public void pollKeys(){
-		
+	public void pollKeyboard(){
+		//wait for keys to be pressed, then update them to the window.
+		//threading ...
 	}
 
 }

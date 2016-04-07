@@ -1,0 +1,18 @@
+package main;
+
+import edu.neumont.csc415.DesktopGraphics;
+import edu.neumont.csc415.IPaintable;
+
+public class Window implements IPaintable{
+
+	public Window() {	
+		
+	}
+
+	@Override
+	public void paint(DesktopGraphics arg0) {
+				
+	}
+	
+	
+}

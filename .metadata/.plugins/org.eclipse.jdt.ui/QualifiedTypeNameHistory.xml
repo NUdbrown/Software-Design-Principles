@@ -2,4 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.Window"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.Desktop"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.IPaintable"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.DesktopColor"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.Point"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.DesktopGraphics"/>
+<fullyQualifiedTypeName name="main.Window"/>
 </qualifiedTypeNameHistroy>

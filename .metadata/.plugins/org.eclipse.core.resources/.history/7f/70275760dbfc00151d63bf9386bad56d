@@ -1,0 +1,19 @@
+package main;
+
+import edu.neumont.csc415.DesktopColor;
+import edu.neumont.csc415.DesktopGraphics;
+import edu.neumont.csc415.IPaintable;
+
+public class Window implements IPaintable{
+
+	public Window() {	
+		
+	}
+
+	@Override
+	public void paint(DesktopGraphics arg0) {
+		arg0.fillRectangle(0, 400, DesktopColor.LIGHT_GRAY);		
+	}
+	
+	
+}
