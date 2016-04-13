@@ -1,0 +1,43 @@
+package main;
+
+import java.util.List;
+import java.util.Scanner;
+
+import edu.neumont.csc415.Desktop;
+
+public class Keyboard{
+	private Desktop dtop;
+	private List<Window> listOfWindows;
+	
+	public Keyboard(Desktop dtop){
+		this.dtop = dtop;
+		
+	}
+	
+	public void registerObserver(Window win){
+		listOfWindows.add(win);
+	}
+	
+	public void notifyObserver(char c){
+		for(Window win : listOfWindows){		
+			win.update(c);
+		}
+	}
+	
+	public void pollKeyboard(){
+		//wait for input
+		//hold whatever is pressed and send it to the window
+		Scanner scan = new Scanner(System.in);
+		while(true){
+			char key = scan.next("[a-zA-Z]").charAt(0);
+				System.out.println("this is from pollkeyboard()" + key);			
+				notifyObserver(key);
+				dtop.repaint();
+				
+				
+			}
+			
+	}
+	
+
+}

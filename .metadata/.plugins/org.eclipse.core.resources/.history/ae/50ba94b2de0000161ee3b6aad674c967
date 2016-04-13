@@ -1,0 +1,50 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.neumont.csc415.DesktopColor;
+import edu.neumont.csc415.DesktopGraphics;
+import edu.neumont.csc415.IPaintable;
+import edu.neumont.csc415.Point;
+
+public class Window implements IPaintable, Observer{
+ //Have the window draw the window as a simple colored rectangle. [check] 
+//Register a controller class with the window to receive keystrokes and place 
+	//the corresponding characters in the window.
+
+	
+	public Window() {	
+		
+	}
+
+	@Override
+	public void paint(DesktopGraphics arg0) {
+		Point topLeft = new Point(100,300);
+		Point bottomRight = new Point(600, 0);
+		//Point startHere = new Point(120,320);
+		arg0.fillRectangle(topLeft,bottomRight , DesktopColor.LIGHT_GRAY);	
+		//arg0.drawChar('c', startHere, DesktopColor.MAGENTA);
+		//char relative to window topleft
+		
+		//paint the chars into the rectangle 
+		//[left to right, start at topLeft corner]
+	}
+
+	//take in char , send to list
+	@Override
+	public void update(char c) {
+		
+		List<Character> theChars = new ArrayList<Character>();		
+		theChars.add(c);
+		for(char k : theChars){
+			
+		}
+		
+		
+	}
+
+
+	
+	
+}

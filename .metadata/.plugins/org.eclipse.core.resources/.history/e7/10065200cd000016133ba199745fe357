@@ -1,0 +1,10 @@
+package main;
+
+import edu.neumont.csc415.DesktopGraphics;
+
+public interface IWindow {	
+	void update();
+
+	void paint(DesktopGraphics arg0, char c);
+
+}

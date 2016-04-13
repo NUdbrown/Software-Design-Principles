@@ -1,0 +1,33 @@
+package main;
+
+import java.util.Scanner;
+
+import edu.neumont.csc415.Desktop;
+
+public class Keyboard{
+	private Window win ;
+	private Desktop dtop;
+	public void registerObserver(Window win){
+		win = new Window();
+	}
+	
+	public void notifyObserver(char c){
+		win.update(c);
+	}
+	
+	public char pollKeyboard(){
+		//wait for input
+		//hold whatever is pressed and send it to the window
+		Scanner scan = new Scanner(System.in);
+		while(true){
+			while(dtop.hasKeysQueued()){
+				//get the keys
+			}
+			
+		}
+		
+	}
+
+	
+
+}

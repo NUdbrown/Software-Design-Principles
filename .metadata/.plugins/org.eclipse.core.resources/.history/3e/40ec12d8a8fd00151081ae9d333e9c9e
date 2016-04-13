@@ -1,0 +1,13 @@
+package main;
+
+public class Keyboard{
+	
+	//wait for keys to be pressed, then update them to the window.
+	//threading ?...
+	//character echoing (like taking in input)
+
+
+
+	
+
+}

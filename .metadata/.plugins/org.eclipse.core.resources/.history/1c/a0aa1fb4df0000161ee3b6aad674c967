@@ -1,0 +1,29 @@
+package main;
+
+import java.util.Scanner;
+
+public class Keyboard{
+	private Window win ;
+	public void registerObserver(Window win){
+		win = new Window();
+	}
+	
+	public void notifyObserver(){
+		
+	}
+	
+	public void pollKeyboard(){
+		//wait for input
+		//hold whatever is pressed and send it to the window
+		Scanner scan = new Scanner(System.in);
+		while(true){
+			scan.nextLine();
+			
+			
+		}
+		
+	}
+
+	
+
+}
