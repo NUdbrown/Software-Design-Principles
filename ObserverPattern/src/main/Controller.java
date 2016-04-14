@@ -12,11 +12,7 @@ public class Controller {
 		Keyboard keyboard = new Keyboard(desktop);
 		keyboard.registerObserver(window);
 		keyboard.pollKeyboard();
-		//desktop.repaint();
-		
-		//checking keyboard
-//		Keyboard k = new Keyboard();
-//		System.out.println(k.pollKeyboard());
+
 		
 		
 	}

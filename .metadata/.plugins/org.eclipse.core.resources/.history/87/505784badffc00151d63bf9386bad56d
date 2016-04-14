@@ -1,7 +1,0 @@
-package main;
-
-public interface IWindow {
-	
-	public void notify(); 
-
-}

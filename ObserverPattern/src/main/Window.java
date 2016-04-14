@@ -28,14 +28,24 @@ public class Window implements IPaintable, Observer{
 		Point topLeft = new Point(100,300);
 		Point bottomRight = new Point(600, 0);
 		//char width & height
+		int x = 90, y =320;
 		arg0.fillRectangle(topLeft,bottomRight , DesktopColor.LIGHT_GRAY);	
 		
 		for(char c : theChars){
-			int y = 300 + desktop.getCharWidth(c) + 20;
-			int x = 100 + desktop.getCharHeight();
-			Point charPosition = new Point(x,y);
+			if(x >= 580){
+				y = y + desktop.getCharHeight();
+				//y = y + 15;
+				x = 100;
+			}
+			else if(y == 0){
+				
+			}
+			else{
+				x += desktop.getCharWidth(c);
+			}
+			Point charPosition = new Point(x,y);				
 			arg0.drawChar(c, charPosition, DesktopColor.MAGENTA);
-						
+			
 		}
 		
 		//char relative to window topleft		

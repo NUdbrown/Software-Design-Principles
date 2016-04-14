@@ -6,9 +6,10 @@
 <fullyQualifiedTypeName name="edu.neumont.csc415.Point"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
 <fullyQualifiedTypeName name="main.Keyboard"/>
+<fullyQualifiedTypeName name="main.Window"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.DesktopGraphics"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.Desktop"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="main.Window"/>
-<fullyQualifiedTypeName name="edu.neumont.csc415.Desktop"/>
-<fullyQualifiedTypeName name="edu.neumont.csc415.DesktopGraphics"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

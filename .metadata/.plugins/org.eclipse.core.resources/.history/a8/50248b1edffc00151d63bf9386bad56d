@@ -1,6 +1,0 @@
-package main;
-
-public interface Observer {
-	void update(Window window);
-	
-}
