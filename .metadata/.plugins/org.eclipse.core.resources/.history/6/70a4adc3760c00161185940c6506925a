@@ -1,0 +1,45 @@
+package main;
+
+import edu.neumont.csc415.DesktopColor;
+import edu.neumont.csc415.DesktopGraphics;
+import edu.neumont.csc415.Point;
+
+public class Title implements IWindow {
+	private IWindow win;
+	private String title;
+	private int width;
+	private int height;
+	
+	public Title(IWindow win, String title){
+		this.win = win;
+		this.title = title;
+		setWidth(260);
+		setHeight(0);
+	}
+	
+	@Override
+	public void paint(DesktopGraphics arg0){
+		Point topLeft = new Point(win.getWidth(), getWidth());
+		Point bottomRight = new Point(win.getHeight(), height);
+		arg0.fillRectangle(topLeft, bottomRight, DesktopColor.CYAN);
+	}
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
+	@Override
+	public int getHeight() {
+		return height;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+}

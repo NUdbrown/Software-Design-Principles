@@ -1,0 +1,4 @@
+1461342924699	Encapsulate field 'width'
+1461342934347	Encapsulate field 'height'
+1461343626464	Extract interface 'Decorator'
+1461343733719	Delete element

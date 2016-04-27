@@ -1,0 +1,31 @@
+package main;
+
+import edu.neumont.csc415.DesktopGraphics;
+
+public class Border implements IWindow {
+	private int width;
+	private int height;
+	public Border(){
+		
+	}
+	
+	@Override
+	public void paint(DesktopGraphics arg0) {
+
+
+	}
+
+	@Override
+	public int getWidth(IWindow win) {
+
+		return 0;
+	}
+
+	@Override
+	public int getHeight(IWindow win) {
+
+		return 0;
+	}
+
+
+}

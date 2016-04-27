@@ -1,9 +1,0 @@
-package main;
-
-import edu.neumont.csc415.DesktopGraphics;
-
-public interface IWindow {	
-	void update();
-	
-
-}

@@ -1,0 +1,29 @@
+package main;
+
+import edu.neumont.csc415.DesktopGraphics;
+
+public class Title implements IWindow {
+	private IWindow win;
+	private String title;
+	
+	public Title(IWindow win, String title){
+		this.win = win;
+		this.title = title;
+	}
+	
+	@Override
+	public void paint(DesktopGraphics arg0){
+		arg0.fillRectangle(topLeft, bottomRight, color);
+	}
+
+	@Override
+	public int getWidth() {
+		return win.getWidth();
+	}
+
+	@Override
+	public int getHeight() {
+		return win.getHeight();
+	}
+
+}

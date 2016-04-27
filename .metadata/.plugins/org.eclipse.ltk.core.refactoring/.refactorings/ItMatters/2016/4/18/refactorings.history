@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;k&apos; in &apos;GaussianElimination.solve(...)&apos; to &apos;r&apos;&#x0D;&#x0A;- Original project: &apos;ItMatters&apos;&#x0D;&#x0A;- Original element: &apos;GaussianElimination.solve(double[][], double[]).k&apos;&#x0D;&#x0A;- Renamed element: &apos;k&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;k&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{GaussianElimination.java[GaussianElimination~solve~\[\[D~\[D@k!134!142!138!138!I!0!false" name="r" references="true" stamp="1461587440423" version="1.0"/>
+</session>

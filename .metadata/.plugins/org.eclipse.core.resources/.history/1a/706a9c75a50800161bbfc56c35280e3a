@@ -1,0 +1,6 @@
+package main;
+
+public interface IWindow extends Observer{
+	
+
+}

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.Window"/>
-<fullyQualifiedTypeName name="edu.neumont.csc415.IPaintable"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.DesktopColor"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.Point"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
@@ -12,4 +11,9 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.IPaintable"/>
+<fullyQualifiedTypeName name="GameCommand"/>
+<fullyQualifiedTypeName name="TVScreen"/>
+<fullyQualifiedTypeName name="N64Console"/>
+<fullyQualifiedTypeName name="NoGame"/>
 </qualifiedTypeNameHistroy>

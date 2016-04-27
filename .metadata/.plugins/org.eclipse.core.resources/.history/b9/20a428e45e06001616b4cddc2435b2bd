@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Controller {
+    /** Main function **/
+    public static void main (String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Gaussian Elimination Algorithm Test\n");
+        /** Make an object of GaussianElimination class **/
+        GaussianElimination ge = new GaussianElimination();
+ 
+        System.out.println("\nEnter number of variables");
+        int numOfVariables = scan.nextInt();
+ 
+        double[] B = new double[numOfVariables];
+        double[][] A = new double[numOfVariables][numOfVariables];
+ 
+        System.out.println("\nEnter "+ numOfVariables +" equations coefficients ");
+        for (int i = 0; i < N; i++)
+            for (int j = 0; j < N; j++)
+                A[i][j] = scan.nextDouble();
+ 
+        System.out.println("\nEnter "+ N +" solutions");
+        for (int i = 0; i < N; i++)
+            B[i] = scan.nextDouble();
+ 
+        ge.solve(A,B);
+    }
+
+}
