@@ -1,0 +1,36 @@
+package main;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+
+import edu.neumont.csc415.Desktop;
+
+public class Controller {
+	
+	public static void main(String [] args) throws InterruptedException{
+		Desktop desktop = new Desktop(800,800);
+		File filename = new File("fake.txt");
+		WindowFactory factory = new WindowFactory(desktop);
+		
+		try {
+			if(factory.chooseTypeOfWindow(filename)){
+				Keyboard keyboard = new Keyboard(desktop);
+				keyboard.registerObserver(factory.createWindow());
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println("The file wasn't found.");
+			e.printStackTrace();
+			e.getMessage();
+		}
+		
+		Title title = new Title(desktop,factory.createWindow(), "TextEditor");
+		Border border = new Border(title);
+		//Keyboard keyboard = new Keyboard(desktop);
+		desktop.registerPaintable(border);
+		//keyboard.registerObserver(window);
+		//keyboard.pollKeyboard();
+		
+		
+	}
+
+}

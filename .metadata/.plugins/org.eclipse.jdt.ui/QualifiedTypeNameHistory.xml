@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.Window"/>
-<fullyQualifiedTypeName name="edu.neumont.csc415.DesktopColor"/>
-<fullyQualifiedTypeName name="edu.neumont.csc415.Point"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
-<fullyQualifiedTypeName name="main.Keyboard"/>
 <fullyQualifiedTypeName name="main.Window"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.DesktopGraphics"/>
-<fullyQualifiedTypeName name="edu.neumont.csc415.Desktop"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
@@ -16,4 +12,12 @@
 <fullyQualifiedTypeName name="TVScreen"/>
 <fullyQualifiedTypeName name="N64Console"/>
 <fullyQualifiedTypeName name="NoGame"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.DesktopColor"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.Point"/>
+<fullyQualifiedTypeName name="main.Keyboard"/>
+<fullyQualifiedTypeName name="edu.neumont.csc415.Desktop"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="main.MockKeyboard"/>
 </qualifiedTypeNameHistroy>

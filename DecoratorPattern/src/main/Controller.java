@@ -9,10 +9,8 @@ public class Controller {
 		Window window = new Window(desktop);
 		Title title = new Title(desktop, window, "TextEditor");
 		Border border = new Border(title);
-		desktop.registerPaintable(border);
-		desktop.registerPaintable(title);
-		desktop.registerPaintable(window);
 		Keyboard keyboard = new Keyboard(desktop);
+		desktop.registerPaintable(border);
 		keyboard.registerObserver(window);
 		keyboard.pollKeyboard();
 		
