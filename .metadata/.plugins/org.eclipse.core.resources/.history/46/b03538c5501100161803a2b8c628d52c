@@ -1,0 +1,39 @@
+package main;
+
+import java.io.File;
+
+import edu.neumont.csc415.Desktop;
+
+//what is involved in creating a window
+//paint method
+//the keyboard
+public class WindowFactory {
+	
+	public boolean chooseTypeOfWindow(File filename){
+		boolean useReal = false;
+		String fileLine = null;
+		while(filename.canRead()){
+				
+		}
+		if(fileLine.equals("real")){
+			return useReal = true;
+		}
+		
+		return useReal;		
+	}
+	
+	public Window createWindow(Desktop desktop){
+		Window win = new Window(desktop);
+		
+		if(chooseTypeOfWindow()){
+			Keyboard keyboard = new Keyboard(desktop);
+			
+		}else{
+			MockKeyboard mock = new MockKeyboard(desktop, win);			
+		}
+		
+		return win;
+		
+	}
+
+}

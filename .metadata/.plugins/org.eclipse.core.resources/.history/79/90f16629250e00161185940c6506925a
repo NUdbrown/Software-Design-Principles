@@ -1,0 +1,6 @@
+package main;
+
+//what is involved in creating a window
+public class WindowFactory {
+
+}

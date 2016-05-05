@@ -1,0 +1,19 @@
+package main;
+
+//what is involved in creating a window
+//paint method
+//the keyboard
+public class WindowFactory {
+	
+	public boolean chooseTypeOfWindow(){
+		boolean useReal = false;
+		
+		String fileLine = null;
+		if(fileLine.equals("real")){
+			return useReal = true;
+		}
+		
+		return useReal;		
+	}
+
+}
