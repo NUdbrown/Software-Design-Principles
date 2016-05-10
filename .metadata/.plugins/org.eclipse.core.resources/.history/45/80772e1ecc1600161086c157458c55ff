@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.stream.events.Characters;
+
+public class TextBuffer {
+	List<Characters> leftOfCursor = new ArrayList<Characters>();
+
+}

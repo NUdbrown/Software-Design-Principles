@@ -1,0 +1,5 @@
+
+public class TextBuffer {
+	List<Characters> leftOfCursor = new List<Characters>();
+
+}
