@@ -7,7 +7,7 @@ import edu.neumont.csc415.Desktop;
 
 public class Keyboard{
 	private Desktop dtop;
-	private List<Window> listOfWindows = new ArrayList<Window>();
+	private List<Controller> listOfControllers = new ArrayList<Controller>();
 
 	
 	public Keyboard(Desktop dtop){
@@ -15,13 +15,13 @@ public class Keyboard{
 		
 	}
 	
-	public void registerObserver(Window win){
-		listOfWindows.add(win);
+	public void registerObserver(Controller controller){
+		listOfControllers.add(controller);
 	}
 	
 	public void notifyObserver(char c){
-		for(Window win : listOfWindows){		
-			win.update(c);
+		for(Controller controller : listOfControllers){		
+			controller.sendChar(c);
 		}
 	}
 	

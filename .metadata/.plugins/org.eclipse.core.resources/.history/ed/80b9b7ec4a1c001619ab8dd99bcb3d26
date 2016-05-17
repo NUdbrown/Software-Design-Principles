@@ -1,0 +1,11 @@
+public class Controller {
+	
+	public static void main(String [] args) throws InterruptedException{
+		View view = new View();
+		Model model = new Model();
+		//need switch to determine the keys and what to do with them.
+		
+		
+	}
+
+}

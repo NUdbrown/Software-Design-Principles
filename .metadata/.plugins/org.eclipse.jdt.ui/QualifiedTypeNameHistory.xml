@@ -4,8 +4,6 @@
 <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
 <fullyQualifiedTypeName name="main.Window"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.DesktopGraphics"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.IPaintable"/>
 <fullyQualifiedTypeName name="GameCommand"/>
@@ -21,4 +19,6 @@
 <fullyQualifiedTypeName name="main.MockKeyboard"/>
 <fullyQualifiedTypeName name="java.nio.file.Files"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
