@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.stream.events.Characters;
+
+public class Model {
+	private List<Character> leftOfCursor = new ArrayList<Character>();
+	private List<Character> rightOfCursor = new ArrayList<Character>();
+	private List<IModelObserver> listOfObservers = new ArrayList<IModelObserver>;
+	
+	
+	/**To move the cursor one character to the left,
+	 *  pop the left list and push the result onto the right list.
+	 *  
+	 *  to add a char to the screen it goes on the left side
+	 */
+	
+//	
+//	public List<Character> getLeftOfCursor() {
+//		return leftOfCursor;
+//	}
+//	public void setLeftOfCursor(List<Character> leftOfCursor) {
+//		this.leftOfCursor = leftOfCursor;
+//	}
+//	public List<Character> getRightOfCursor() {
+//		return rightOfCursor;
+//	}
+//	public void setRightOfCursor(List<Character> rightOfCursor) {
+//		this.rightOfCursor = rightOfCursor;
+//	}
+	
+	public void registerObserver(IModelObserver observer){
+		listOfObservers.add(observer);
+	}
+	
+	public void notifyObserver(char c){
+		for(IModelObserver observer : listOfObservers){		
+			observer.update();
+		}
+	}
+	
+	public void insertChar(char c){
+		
+	}
+	
+	public void deleteLeft(){
+		
+	}
+	
+	public void deleteRight(){
+		
+	}
+	
+	public void moveLeft(){
+		
+	}
+	public void moveRight(){
+		
+	}
+	
+
+	public interface IModelObserver{
+		public void update();
+	}
+	
+	
+}

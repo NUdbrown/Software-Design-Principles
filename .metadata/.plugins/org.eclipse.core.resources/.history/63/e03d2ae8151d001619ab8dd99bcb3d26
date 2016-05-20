@@ -1,0 +1,19 @@
+public class Controller {
+	private Model model;
+	
+	public Controller(Model model){
+		this.model = model;
+	}
+		
+	//cases: if char , backspace, left or right cursor
+	public void sendChar(char c) {
+		
+		switch(c){
+					
+				 
+		}
+		
+		
+	}
+
+}

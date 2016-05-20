@@ -19,9 +19,9 @@ public class Keyboard{
 		listOfControllers.add(controller);
 	}
 	
-	public void notifyObserver(char c){
+	public void notifyObserver(int key){
 		for(Controller controller : listOfControllers){		
-			controller.sendChar(c);
+			controller.sendCharsInt(key);
 		}
 	}
 	
@@ -31,7 +31,7 @@ public class Keyboard{
 		boolean running = true;
 		while(running){
 			while(dtop.hasKeysQueued()){
-				char key = (char)dtop.getKeyCode();
+				int key = (int)dtop.getKeyCode();
 				System.out.println("this is from pollkeyboard()" + key);			
 				notifyObserver(key);
 				dtop.repaint();				

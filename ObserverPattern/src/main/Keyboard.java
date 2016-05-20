@@ -31,8 +31,9 @@ public class Keyboard{
 		boolean running = true;
 		while(running){
 			while(dtop.hasKeysQueued()){
+				//System.out.println("this is from pollKeyboard: int " + dtop.getKeyCode());
 				char key = (char)dtop.getKeyCode();
-				System.out.println("this is from pollkeyboard()" + key);			
+				System.out.println("this is from pollkeyboard()" + key);	
 				notifyObserver(key);
 				dtop.repaint();				
 				

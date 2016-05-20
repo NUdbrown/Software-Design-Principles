@@ -1,22 +1,30 @@
 public class Controller {
+	private Model model;
 	
-	public static void main(String [] args){
-		View view = new View();
-		Model model = new Model();
-		view.registerObserver(model);
-		view.showView();
-		//need switch to determine the keys and what to do with them.	
-		
+	public Controller(Model model){
+		this.model = model;
 	}
-
+		
 	//cases: if char , backspace, left or right cursor
-	public void sendChar(char c) {
+	public void sendCharsInt(int keyPress) {
+		final int backspace = 8;
+		final int leftArrow = 17;
+		final int rightArrow = 19;
 		
-		switch(c){
-		 
-		}
-		
-		
+		switch(keyPress){
+		case backspace:
+			model.deleteLeft();
+			 break;
+		case leftArrow:
+			model.moveLeft();
+			break;
+		case rightArrow:
+			model.moveRight();
+			break;
+		default:
+			model.insertChar(keyPress);
+			break;
+		}		
 	}
 
 }

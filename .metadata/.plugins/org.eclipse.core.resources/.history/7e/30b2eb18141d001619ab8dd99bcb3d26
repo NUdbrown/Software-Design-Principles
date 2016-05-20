@@ -1,0 +1,23 @@
+import java.awt.Desktop;
+
+public class Controller {
+	private Desktop desktop;
+	public Controller(Desktop desktop){
+		this.desktop = desktop;
+	}
+	
+	//cases: if char , backspace, left or right cursor
+	public void sendChar(char c) {
+		c = (char)desktop.getKeyCode();
+		
+		switch(c){
+		case :
+			break;
+		default 
+		 
+		}
+		
+		
+	}
+
+}

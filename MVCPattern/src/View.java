@@ -1,23 +1,13 @@
-import java.util.ArrayList;
-import java.util.List;
-
 import edu.neumont.csc415.Desktop;
 
-public class View{
+public class View implements IModelObserver{
 	
-	private List<Model> listOfModels = new ArrayList<Model>();
-
-
+	private Controller controller;
 	
-	public void registerObserver(Model model){
-		listOfModels.add(model);
+	public View(Controller controller){
+		this.controller = controller;
 	}
 	
-	public void notifyObserver(char c){
-		for(Model model : listOfModels){		
-			model.update(c);
-		}
-	}
 	
 	public void showView(){
 		Desktop desktop = new Desktop(800,800);
@@ -28,5 +18,19 @@ public class View{
 		keyboard.pollKeyboard();
 	}
 
+	@Override
+	public void update(char c) {
+				
+	}
+	
+//	public static void main(String [] args){
+//		Model model = new Model();
+//		Controller controller = new Controller(model);
+//		View view = new View(controller);
+//		view.registerObserver(model);
+//		view.showView();
+//		//need switch to determine the keys and what to do with them.	
+//		
+//	}
 	
 }

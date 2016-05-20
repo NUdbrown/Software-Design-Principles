@@ -1,0 +1,22 @@
+import java.awt.Desktop;
+
+public class Controller {
+	private model
+	
+	
+	//cases: if char , backspace, left or right cursor
+	public void sendChar(char c) {
+		
+		switch(c){
+		case c = '^' :
+			
+			break;
+			
+		default c = ;
+		 
+		}
+		
+		
+	}
+
+}

@@ -11,8 +11,7 @@ public class Controller {
 		Keyboard keyboard = new Keyboard(desktop);
 		keyboard.registerObserver(window);
 		keyboard.pollKeyboard();
-
-		
+	
 		
 	}
 
