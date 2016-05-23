@@ -1,0 +1,22 @@
+import edu.neumont.csc415.Desktop;
+
+public class View implements IModelObserver{
+	
+	private Controller controller;
+	
+	public View(Controller controller){
+		this.controller = controller;
+	}
+	
+	
+	public void showView(){
+		
+	}
+
+	@Override
+	public void update(char c) {
+				
+	}
+	
+	
+}

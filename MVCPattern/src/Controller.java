@@ -4,7 +4,8 @@ public class Controller {
 	public Controller(Model model){
 		this.model = model;
 	}
-		
+	
+	//need switch to determine the keys and what to do with them.
 	//cases: if char , backspace, left or right cursor
 	public void sendCharsInt(int keyPress) {
 		final int backspace = 8;
