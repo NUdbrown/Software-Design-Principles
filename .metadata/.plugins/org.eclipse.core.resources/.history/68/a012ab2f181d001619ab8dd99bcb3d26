@@ -1,4 +1,0 @@
-
-public interface IModelObserver{
-		public void update(char c);
-	}

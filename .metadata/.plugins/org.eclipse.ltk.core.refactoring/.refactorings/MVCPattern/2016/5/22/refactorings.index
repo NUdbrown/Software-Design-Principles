@@ -1,1 +1,8 @@
 1464020324382	Delete element
+1464021057715	Rename field 'dtop'
+1464021068304	Rename local variable 'dtop'
+1464023848303	Encapsulate field 'allTheCharacters'
+1464033188144	Rename local variable 'i'
+1464033205702	Rename local variable 'j'
+1464033365503	Rename local variable 'col'
+1464109806248	Copy compilation units
