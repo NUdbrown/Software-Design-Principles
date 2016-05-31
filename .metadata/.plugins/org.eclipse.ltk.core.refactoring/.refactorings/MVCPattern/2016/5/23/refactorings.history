@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 7 elements to &apos;CommandPattern/src&apos;&#x0D;&#x0A;- Original project: &apos;MVCPattern&apos;&#x0D;&#x0A;- Destination element: &apos;CommandPattern/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Runner.java&#x0D;&#x0A;     Window.java&#x0D;&#x0A;     IModelObserver.java&#x0D;&#x0A;     Model.java&#x0D;&#x0A;     Controller.java&#x0D;&#x0A;     Observer.java&#x0D;&#x0A;     Keyboard.java" description="Copy compilation units" destination="=CommandPattern/src" element1="/src&lt;{Runner.java" element2="/src&lt;{Window.java" element3="/src&lt;{IModelObserver.java" element4="/src&lt;{Model.java" element5="/src&lt;{Controller.java" element6="/src&lt;{Observer.java" element7="/src&lt;{Keyboard.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1464693405681" units="7" version="1.0"/>
+</session>

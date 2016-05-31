@@ -1,0 +1,13 @@
+
+public class DeleteLeftCommand implements CommandParser {
+
+	public DeleteLeftCommand() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public void execute() {
+
+	}
+
+}

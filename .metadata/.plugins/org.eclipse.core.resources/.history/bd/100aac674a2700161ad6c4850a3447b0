@@ -1,0 +1,14 @@
+
+public class DeleteLeftCommand implements CommandParser {
+	private Model model;
+	
+	public DeleteLeftCommand(Model model) {
+		this.model = model;
+	}
+	
+	@Override
+	public void execute() {
+
+	}
+
+}

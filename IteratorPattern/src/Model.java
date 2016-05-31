@@ -68,17 +68,17 @@ public class Model{
 		}
 	}
 
-	public List<Character> getAllTheCharacters() {
-		List<Character> allTheCharacters = new ArrayList<Character>();
-		
-		for(char c: leftOfCursor){
-			allTheCharacters.add(c);			
-		}
-		for(char c : rightOfCursor){
-			allTheCharacters.add(c);
-		}
-		return allTheCharacters;
-	}
+//	public List<Character> getAllTheCharacters() {
+//		List<Character> allTheCharacters = new ArrayList<Character>();
+//		
+//		for(char c: leftOfCursor){
+//			allTheCharacters.add(c);			
+//		}
+//		for(char c : rightOfCursor){
+//			allTheCharacters.add(c);
+//		}
+//		return allTheCharacters;
+//	}
 
 	public ModelIterator getIterator(){
 		ModelIterator iterator = new ModelIterator(leftOfCursor, rightOfCursor);
@@ -94,12 +94,14 @@ public class Model{
 			this.rightStack = right;
 		}
 		
+		public int sizeOfStacks(){
+			int size = leftStack.size() + rightStack.size();
+			return size;
+		}
+		
 		@Override
 		public boolean hasNext() {
-			if(leftStack.size() > 0 || rightStack.size() > 0){
-				return true;
-			}
-			return false;
+			return index < sizeOfStacks();						
 		}
 		
 		@Override
@@ -107,14 +109,12 @@ public class Model{
 			char c = 0;
 			if( index < leftStack.size()){
 				c = leftStack.get(index) ;
-				index++;
 			}else{
-				index = 0;
-				if(index < rightStack.size()){
-					c = rightStack.get(index);
-					index++;
-				}				
+				int rightIndex = index - leftStack.size();
+				c = rightStack.get(rightIndex);
+								
 			}
+			index++;
 			
 			return c;
 		}

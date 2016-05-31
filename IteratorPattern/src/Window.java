@@ -31,12 +31,12 @@ public class Window implements IPaintable, IModelObserver{
 		arg0.fillRectangle(topLeft,bottomRight , DesktopColor.LIGHT_GRAY);	
 		//char width & height
 		int index = 0;
-		if( model.getAllTheCharacters().size() != 0){
-			for(int row = 0; row < HEIGHT && index < model.getAllTheCharacters().size(); row++){
-				for(int col = 0; col < WIDTH && index < model.getAllTheCharacters().size(); col++){					
+		if( model.getIterator().sizeOfStacks() != 0){
+			for(int row = 0; row < HEIGHT && index < model.getIterator().sizeOfStacks(); row++){
+				for(int col = 0; col < WIDTH && index < model.getIterator().sizeOfStacks(); col++){					
 					char c = characters[row][col];
 					Point charPosition = new Point(col*desktop.getCharWidth(c) + topLeft.getX(), (row + 1)*desktop.getCharHeight()+topLeft.getY());
-					System.out.println("This should be on the screen: " + c + "\tposition: " + charPosition.toString());
+					//System.out.println("This should be on the screen: " + c + "\tposition: " + charPosition.toString());
 					arg0.drawChar(c, charPosition, DesktopColor.MAGENTA);
 					index++;
 				}
@@ -48,14 +48,20 @@ public class Window implements IPaintable, IModelObserver{
 	//fill in the chars in the 2D
 	private void fillChar2D(){
 
-		for(int row = 0; row < HEIGHT; row++){
-			for(int col = 0; col < WIDTH ; col++){
-				if(model.getIterator().hasNext()){
-					characters[row][col] = (char) model.getIterator().next();														
-				}
-			}
-		}			
-
+		int row = 0;
+		int col = 0;
+		Model.ModelIterator iterator  = model.getIterator();
+		while(iterator.hasNext() && row < HEIGHT){
+			char c  = (char) iterator.next();
+			characters[row][col] = c;
+//			System.out.println("the character is " + c);
+			col++;
+			if(col >= WIDTH || characters[row][col] == '\n'){
+				row++;
+				col = 0;
+			}		
+			
+		}
 	}
 
 	//take in char , send to list

@@ -1,0 +1,9 @@
+
+public class DeleteLeftCommand implements CommandParser {
+
+	@Override
+	public void execute() {
+
+	}
+
+}
