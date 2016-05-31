@@ -91,7 +91,6 @@ public class Model {
 		deleteLeft();
 
 	}
-	
 	//whatever was undid, put it back
 	public void redo() {
 		insertChar(keepTrackOfThis);
