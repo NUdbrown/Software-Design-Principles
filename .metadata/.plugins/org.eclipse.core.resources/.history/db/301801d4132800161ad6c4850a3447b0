@@ -1,0 +1,21 @@
+package main;
+
+public class FillRegular2D implements Fill2DArray {
+	
+	public FillRegular2D() {
+		
+	}
+	
+	@Override
+	public void fill2D(Model model) {
+		int index = 0;
+		for(int row = 0; row < HEIGHT && index < model.getAllTheCharacters().size()  ; row++){
+			for(int col = 0; col < WIDTH && index < model.getAllTheCharacters().size(); col++){
+				//System.out.println("row: " + row + "\tcol: " + col);
+					characters[row][col] = model.getAllTheCharacters().get(index);								
+				index++;
+			}
+		}
+	}
+
+}

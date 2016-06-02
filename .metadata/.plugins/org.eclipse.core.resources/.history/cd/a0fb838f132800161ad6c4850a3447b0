@@ -1,0 +1,15 @@
+package main;
+
+public class FillRegular2D implements Fill2DArray {
+	
+	public FillRegular2D() {
+		
+	}
+	
+	@Override
+	public void fill2D() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

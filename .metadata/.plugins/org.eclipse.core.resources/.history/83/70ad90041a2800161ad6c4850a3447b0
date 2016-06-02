@@ -1,0 +1,7 @@
+package main;
+
+public interface Fill2DArray {
+	
+	public void fill2D(Model model, char[][]arrayA, int height, int width);
+
+}

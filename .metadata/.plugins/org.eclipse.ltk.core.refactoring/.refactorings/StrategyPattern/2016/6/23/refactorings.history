@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;main.Fill2DArray&apos; to &apos;IFill2DArray&apos;&#x0D;&#x0A;- Original project: &apos;StrategyPattern&apos;&#x0D;&#x0A;- Original element: &apos;main.Fill2DArray&apos;&#x0D;&#x0A;- Renamed element: &apos;main.IFill2DArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Fill2DArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;main{Fill2DArray.java[Fill2DArray" matchStrategy="1" name="IFill2DArray" qualified="false" references="true" similarDeclarations="false" stamp="1464800289322" textual="false" version="1.0"/>
+</session>

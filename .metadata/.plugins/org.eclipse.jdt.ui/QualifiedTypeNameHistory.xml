@@ -29,4 +29,11 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="Model.ModelIterator"/>
+<fullyQualifiedTypeName name="MoveLeftCommand"/>
+<fullyQualifiedTypeName name="MoveRightCommand"/>
+<fullyQualifiedTypeName name="InsertCommand"/>
+<fullyQualifiedTypeName name="main.RandomNumberGenerator"/>
+<fullyQualifiedTypeName name="main.Fill2DArray"/>
+<fullyQualifiedTypeName name="main.WordWrap2D"/>
+<fullyQualifiedTypeName name="main.FillRegular2D"/>
 </qualifiedTypeNameHistroy>

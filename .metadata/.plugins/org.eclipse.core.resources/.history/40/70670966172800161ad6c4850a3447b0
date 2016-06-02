@@ -1,0 +1,13 @@
+package main;
+
+
+public class RandomNumberGenerator {
+	
+	public static RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
+	
+	
+	public static RandomNumberGenerator getInstance(){
+		return randomNumberGenerator;
+	}
+
+}

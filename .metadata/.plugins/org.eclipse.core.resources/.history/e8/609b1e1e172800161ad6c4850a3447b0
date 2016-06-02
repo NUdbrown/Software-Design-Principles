@@ -1,0 +1,14 @@
+package main;
+
+import java.util.Random;
+
+public class RandomNumberGenerator {
+	//public static final Random randomNumGen = new Random();
+	public static RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
+	
+	
+	public static RandomNumberGenerator getInstance(){
+		return randomNumberGenerator;
+	}
+
+}
