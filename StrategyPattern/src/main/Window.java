@@ -1,8 +1,4 @@
 package main;
-import java.awt.HeadlessException;
-import java.util.ArrayList;
-import java.util.List;
-
 import edu.neumont.csc415.Desktop;
 import edu.neumont.csc415.DesktopColor;
 import edu.neumont.csc415.DesktopGraphics;
@@ -65,19 +61,21 @@ public class Window implements IPaintable, IModelObserver{
 
 	//take in char , send to list
 	@Override
-	public void update() {	
+	public void update(){
+		fillArray.fill2D(model, characters, HEIGHT, WIDTH);
 		desktop.repaint();		
 	}
 
 	public void turnOnWrap() {
 		fillArray = new WordWrap2D();
 		fillArray.fill2D(model, characters, HEIGHT, WIDTH);
+		update();
 	}
 
 	public void turnOffWrap() {
 		fillArray = new FillRegular2D();
 		fillArray.fill2D(model, characters, HEIGHT, WIDTH);
-		
+		update();
 	}
 
 
