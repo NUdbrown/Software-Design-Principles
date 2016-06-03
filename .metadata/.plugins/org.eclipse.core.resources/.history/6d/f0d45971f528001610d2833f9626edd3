@@ -1,0 +1,54 @@
+package main;
+public class Controller {
+	private Model model;
+	private Window win;
+	
+	public Controller(Model model, Window win){
+		this.model = model;
+		this.win = win;
+	}
+	//need to determine whether to use word-wrap or not
+	//need switch to determine the keys and what to do with them.
+	//cases: if char , backspace, left or right cursor, undo and redo
+	public void sendCharsInt(int keyPress) {
+		final int backspace = 8;
+		final int leftArrow = 17;
+		final int rightArrow = 19;
+		final int undo = 45; //-
+		final int redo = 43; //+
+		final int wordwrap = 62; //>
+		final int noWordWrap = 60; //<
+		
+		CommandParser command = null;
+		
+		if(keyPress == undo){
+			command = new UndoCommand(model);
+		}else if (keyPress == redo){
+			command = new RedoCommand(model);
+		}else{
+			switch(keyPress){
+			case backspace:
+				command = new BackspaceCommand(model);
+				break;
+			case leftArrow:
+				command = new MoveLeftCommand(model);
+				break;
+			case rightArrow:
+				command = new MoveRightCommand(model);
+				break;
+			case wordwrap:
+				win.turnOnWrap();
+				break;
+			case noWordWrap:
+				win.turnOffWrap();
+				break;
+			default:
+				command = new InsertCommand(model, keyPress);
+				break;
+			}			
+		}
+		command.execute();
+		
+	}
+
+}

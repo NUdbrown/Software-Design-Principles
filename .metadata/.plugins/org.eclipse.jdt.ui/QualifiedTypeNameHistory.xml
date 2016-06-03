@@ -18,13 +18,11 @@
 <fullyQualifiedTypeName name="main.MockKeyboard"/>
 <fullyQualifiedTypeName name="java.nio.file.Files"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="Controller"/>
 <fullyQualifiedTypeName name="java.awt.Desktop"/>
 <fullyQualifiedTypeName name="Model.IModelObserver"/>
 <fullyQualifiedTypeName name="IModelObserver"/>
 <fullyQualifiedTypeName name="edu.neumont.csc415.Desktop"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.awt.HeadlessException"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
@@ -32,8 +30,12 @@
 <fullyQualifiedTypeName name="MoveLeftCommand"/>
 <fullyQualifiedTypeName name="MoveRightCommand"/>
 <fullyQualifiedTypeName name="InsertCommand"/>
-<fullyQualifiedTypeName name="main.RandomNumberGenerator"/>
 <fullyQualifiedTypeName name="main.Fill2DArray"/>
+<fullyQualifiedTypeName name="main.InsertCommand"/>
+<fullyQualifiedTypeName name="main.RandomNumberGenerator"/>
+<fullyQualifiedTypeName name="main.IFill2DArray"/>
 <fullyQualifiedTypeName name="main.WordWrap2D"/>
 <fullyQualifiedTypeName name="main.FillRegular2D"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

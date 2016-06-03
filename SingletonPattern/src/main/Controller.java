@@ -18,9 +18,9 @@ public class Controller {
 		CommandParser command = null;
 		
 		if(keyPress == undo){
-			command = new UndoCommand(model);
+			model.undo();
 		}else if (keyPress == redo){
-			command = new RedoCommand(model);
+			model.redo();
 		}else if(keyPress == randomChar){
 			command = new InsertCommand(model, RandomNumberGenerator.getInstance().getRandomChar());			
 		}

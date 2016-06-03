@@ -1,8 +1,12 @@
 package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Controller {
 	private Model model;
 	private Window win;
-	
+			
 	public Controller(Model model, Window win){
 		this.model = model;
 		this.win = win;
@@ -22,10 +26,16 @@ public class Controller {
 		CommandParser command = null;
 		
 		if(keyPress == undo){
-			command = new UndoCommand(model);
+			model.undo();			
 		}else if (keyPress == redo){
-			command = new RedoCommand(model);
-		}else{
+			model.redo();
+		}
+		else if(keyPress == wordwrap){
+			win.chooseFill(new WordWrap2D());			
+		}else if(keyPress == noWordWrap){
+			win.chooseFill(new FillRegular2D());			
+		}
+		else{
 			switch(keyPress){
 			case backspace:
 				command = new BackspaceCommand(model);
@@ -36,18 +46,12 @@ public class Controller {
 			case rightArrow:
 				command = new MoveRightCommand(model);
 				break;
-			case wordwrap:
-				win.turnOnWrap();
-				break;
-			case noWordWrap:
-				win.turnOffWrap();
-				break;
 			default:
 				command = new InsertCommand(model, keyPress);
 				break;
 			}			
+			command.execute();
 		}
-		command.execute();
 		
 	}
 

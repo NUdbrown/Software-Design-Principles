@@ -8,6 +8,7 @@ public class FillRegular2D implements IFill2DArray {
 
 	@Override
 	public void fill2D(Model model, char[][] arrayA, int height, int width) {
+		System.out.println("no word wrap");
 		int index = 0;
 		for(int row = 0; row < height && index < model.getAllTheCharacters().size()  ; row++){
 			for(int col = 0; col < width && index < model.getAllTheCharacters().size(); col++){

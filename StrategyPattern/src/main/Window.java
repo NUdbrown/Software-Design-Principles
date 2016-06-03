@@ -62,23 +62,18 @@ public class Window implements IPaintable, IModelObserver{
 	//take in char , send to list
 	@Override
 	public void update(){
+		executeStrategy();
+		desktop.repaint();		
+	}
+	
+	public void chooseFill(IFill2DArray fillArray){
+		this.fillArray = fillArray;
+	}
+
+	public void executeStrategy(){
 		fillArray.fill2D(model, characters, HEIGHT, WIDTH);
 		desktop.repaint();		
 	}
-
-	public void turnOnWrap() {
-		fillArray = new WordWrap2D();
-		fillArray.fill2D(model, characters, HEIGHT, WIDTH);
-		update();
-	}
-
-	public void turnOffWrap() {
-		fillArray = new FillRegular2D();
-		fillArray.fill2D(model, characters, HEIGHT, WIDTH);
-		update();
-	}
-
-
 
 	
 	

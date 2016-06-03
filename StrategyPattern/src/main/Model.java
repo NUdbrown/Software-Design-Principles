@@ -1,15 +1,12 @@
 package main;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.stream.events.Characters;
-
-import edu.neumont.csc415.Desktop;
 
 public class Model {
 	private List<Character> leftOfCursor = new ArrayList<Character>();
 	private List<Character> rightOfCursor = new ArrayList<Character>();
 	private List<IModelObserver> listOfObservers = new ArrayList<IModelObserver>();
-	private char keepTrackOfThis;
+	private List<Character> keepTrackOfThis = new ArrayList<Character>();
 
 	/**To move the cursor one character to the left,
 	 *  pop the left list and push the result onto the right list.
@@ -88,14 +85,16 @@ public class Model {
 	//takes away the last keys pressed
 	public void undo() {
 
-		keepTrackOfThis = leftOfCursor.get(leftOfCursor.size() - 1);
+		keepTrackOfThis.add(leftOfCursor.get(leftOfCursor.size() - 1));
 		deleteLeft();
 
 	}
 	
 	//whatever was undid, put it back
 	public void redo() {
-		insertChar(keepTrackOfThis);
+		if(keepTrackOfThis.size() > 0){
+			insertChar(keepTrackOfThis.get(keepTrackOfThis.size() - 1));			
+		}
 	}
 
 	//some how keep track of what was just done and undo it...or redo it
